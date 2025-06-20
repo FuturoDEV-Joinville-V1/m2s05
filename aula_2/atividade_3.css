@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.calculadora {
+    border: 1px solid #207b7b;
+    border-radius: 4px;
+    padding: 42px 24px;
+}
+
+.display > input {
+    width: 98%;
+}
+
+.botoes {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.linha-botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.linha-botoes + .linha-botoes {
+    margin-top: 16px;
+}
+
+button {
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid #207b7b;
+    color: #0b4949;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+button + button {
+    margin-left: 8px;
+}
+
+.numerico {
+    background-color: #e0ffff;
+    border-color: #207b7b;
+    color: #0b4949;
+}
+
+.operador {
+    background-color: #207b7b;
+    border-color: #207b7b;
+    color: #e0ffff;
+}

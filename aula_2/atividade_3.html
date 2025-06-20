@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atividade_3.css">
+    <script src="atividade_3.js" defer></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="display">
+            <input type="text" id="display" disabled>
+        </div>
+        <div class="botoes">
+            <div class="linha-botoes">
+                <button type="button" onclick="limpar()">C</button>
+            </div>
+            <div class="linha-botoes">
+                <button type="button" class="numerico" onclick="btnSelecionado(7)">7</button>
+                <button type="button" class="numerico" onclick="btnSelecionado(8)">8</button>
+                <button type="button" class="numerico" onclick="btnSelecionado(9)">9</button>
+                <button type="button" class="operador" onclick="btnSelecionado('*')">X</button>
+            </div>
+            <div class="linha-botoes">
+                <button type="button" class="numerico" onclick="btnSelecionado(4)">4</button>
+                <button type="button" class="numerico" onclick="btnSelecionado(5)">5</button>
+                <button type="button" class="numerico" onclick="btnSelecionado(6)">6</button>
+                <button type="button" class="operador" onclick="btnSelecionado('/')">/</button>
+            </div>
+            <div class="linha-botoes">
+                <button type="button" class="numerico" onclick="btnSelecionado(1)">1</button>
+                <button type="button" class="numerico" onclick="btnSelecionado(2)">2</button>
+                <button type="button" class="numerico" onclick="btnSelecionado(3)">3</button>
+                <button type="button" class="operador" onclick="btnSelecionado('+')">+</button>
+            </div>
+            <div class="linha-botoes">
+                <button type="button" onclick="btnSelecionado('.')">.</button>
+                <button type="button" class="numerico" onclick="btnSelecionado(0)">0</button>
+                <button type="button" onclick="calcular()">=</button>
+                <button type="button" class="operador" onclick="btnSelecionado('-')">-</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
